@@ -20,9 +20,11 @@ body {
     flex-flow: row wrap;
 	vertical-align: middle;
 	flex-direction: column;
-	border-top-style: dashed;
-	border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+	border-style: solid;
+	border-radius: 5%;
+    padding-bottom: 15px;
+    border-width: 1px;
+    
 	
 }
 
@@ -34,6 +36,7 @@ body {
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
 	background-color: purple;
+    color: white;
 }
 
 .image {
@@ -44,10 +47,28 @@ body {
     padding: 10px;
 }
 
-.follow {
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#follow {
     padding: 10px 20px;
 	background-color: cyan;
 	border: 1px solid #fff;
 	border-radius: 10%;
-	color: white;
+	color: green;
 }
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social .item {
+    margin-right: 30px;
+    text-align: center;
+
+}
+

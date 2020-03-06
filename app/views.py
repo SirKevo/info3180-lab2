@@ -27,12 +27,13 @@ def about():
 @app.route('/profile/')
 def profile():
     """Render the website's profile page."""
-    return render_template('profile.html')
+    date_joined = format_date_joined(2020, 2, 29)
+    return render_template('profile.html', date_joined = date_joined)
 
-@app.route('/datetime/')
-def format_date_joined(date):
-    now = datetime.datetime()
-    date_joined = datetime.date(2020, 2, 29)
+
+def format_date_joined(year, month, day):
+    # now = datetime.datetime()
+    return datetime.date(year, month, day).strftime("%B, %Y")
     
 ###
 # The functions below should be applicable to all Flask apps.
